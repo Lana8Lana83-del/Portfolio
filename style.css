@@ -1,13 +1,90 @@
 /* POLICE GÉNÉRALE */
 body {
     font-family: 'Poppins', sans-serif;
-    background: #fff4fb;
+    background: #fff;
     color: #222;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
   }
   
+
+
+/* Menu déroulant */
+nav {
+
+  font-size: 1rem;
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+  position: relative;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #222;
+  padding: 10px 20px;
+  display: block;
+  transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #d172c1;
+  color: white;
+}
+
+/* Menu déroulant */
+nav ul li ul {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background-color: #fbc2eb;
+  min-width: 180px;
+  padding: 10px 0;
+  list-style-type: none;
+  margin: 0;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul li:hover ul {
+  display: block;
+}
+
+nav ul li ul li a {
+  padding: 10px;
+  color: #222;
+}
+
+nav ul li ul li a:hover {
+  background-color: #d172c1;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   /* ESPACEMENT & TITRES */
   h1, h2 {
     margin: 0;
@@ -36,6 +113,11 @@ body {
   header p {
     font-size: 1.2rem;
   }
+
+
+
+
+
   
   /* COMPETENCES */
   .competence-category h3 {
@@ -56,6 +138,9 @@ body {
   }
   
   /* CAROUSEL PROJETS */
+  .projets zoom-in{
+    height: 1000px;
+  }
   .carousel {
     display: flex;
     overflow-x: auto;

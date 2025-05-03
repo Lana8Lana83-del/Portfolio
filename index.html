@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Portfolio – Siti Ahmadi</title>
+  <title>Portfolio - Siti Ahmadi</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -12,23 +12,41 @@
   <header class="fade-in-down">
     <h1>SITI AHMADI</h1>
     <p>Développeuse Web en formationa a Epitech Moulins</p>
+    <!-- Menu -->
+  <nav>
+    <ul>
+      <li><a href="#acceuil">Accueil</a></li>
+      <li>
+        <a href="#Compétences">Compétences</a>
+        <ul>
+          <li><a href="#Frontend">Frontend</a></li>
+          <li><a href="#Backend">Backend</a></li>
+          <li><a href="#Autres">Autres</a></li>
+        </ul>
+      </li>
+      <li><a href="#Projets">Projets</a></li>
+      <li><a href="#Objectif">Objectif</a></li>
+      <li><a href="#Contact">Contact</a></li>
+    </ul>
+  </nav>
+
   </header>
 
   <main>
-    <section class="presentation slide-in">
+    <section class="presentation slide-in" id="accueil">
       <h2>Présentation</h2>
       <p>Jeune développeuse web en devenir, passionnée par la création de solutions 
-         innovantes et déterminée à relever de nouveaux défis. Curieuse et proactive, 
-         je recherche une alternance pour enrichir mes compétences techniques et contribuer 
+        innovantes et déterminée à relever de nouveaux défis. Curieuse et proactive, 
+        je recherche une alternance pour enrichir mes compétences techniques et contribuer 
         activement à des projets ambitieux.</p>
     </section>
 
 
 
 
-    <section class="competences fade-in">
+    <section class="competences fade-in" id="Compétences">
       <h2>🛠️ Compétences</h2>
-      <div class="competence-category">
+      <div class="competence-category" id="Frontend">
         <h3>🔧 Frontend</h3>
         <ul>
           <li>HTML, CSS, JavaScript, React, Angular</li>
@@ -39,7 +57,7 @@
         </ul>
       </div>
       
-      <div class="competence-category">
+      <div class="competence-category" id="Backend">
         <h3>🔨 Backend</h3>
         <ul>
           <li>C, C++, Java, Python, PHP</li>
@@ -50,7 +68,7 @@
         </ul>
       </div>
 
-      <div class="competence-category">
+      <div class="competence-category" id="Autres">
         <h3>⚙️ Autres Compétences</h3>
         <ul>
           <li>Machine Learning (bases)</li>
@@ -70,7 +88,7 @@
 
 
 
-    <section class="projets zoom-in">
+    <section class="projets zoom-in" style="height: 40%;" id="Projets">
       <h2> Projets</h2>
       <div class="carousel">
         <div class="card bounce-in">
@@ -86,6 +104,37 @@
           <p>Page personnelle avec animations CSS, responsive et propre.</p>
         </div>
         <!-- Tu peux ajouter jusqu'à 20 cartes ici -->
+        <div class="card bounce-in">
+          <a href="maquette_responsive-assets/index.html" target="_blank">
+              <p>maquette-responsive</p>
+              <p class="description-projet"><a href="des-maquette.html">Description du projet</a></p>
+          </a>
+        </div>
+        <div  class="card bounce-in">
+          <a href="W-JSC-501-MLN-1-1-puissance4-siti.ahamadi/puissance4.html" target="_blank">
+              <p>Puissance 4</p>
+              <p class="description-projet"><a href="des-puissance.html">Description du projet</a></p>
+          </a>
+        </div>
+        <div class="card bounce-in">
+          <a href="W-COL-501-MLN-1-1-quizz-siti.ahamadi/quiz.html" target="_blank">
+              <p>QUIZ</p>
+              <p class="description-projet"><a href="des-quiz.html">Description du projet</a></p>
+          </a>
+        </div>
+      
+        <div class="card bounce-in">
+          <a href="W-COL-501-MLN-1-1-myutils-siti.ahamadi/index.html" target="_blank">
+              <p>My_utils</p>
+              <p class="description-projet"><a href="des-myutil.html">Description du projet</a></p>
+          </a>
+        </div>
+        <div  class="card bounce-in">
+          <a href="W-PHP-501-MLN-1-1-mycinema-siti.ahamadi/" target="_blank">
+              <p>My cinéma</p>
+              <p class="description-projet"><a href="des-mycinema.html">Description du projet</a></p>
+          </a>
+        </div>
       </div>
     </section>
 
@@ -93,35 +142,53 @@
 
 
 
-    <section class="objectif slide-in">
+    <section class="objectif slide-in" id="Objectif">
       <h2>🚀 Objectif</h2>
       <p>Je veux apprendre dans une équipe bienveillante et devenir une vraie développeuse pro. Donnez-moi ma chance 💪</p>
     </section>
 
 
 
-    <section class="contact fade-in">
+    <section class="contact fade-in" id="Contact" >
       <h2>📩 Me Contacter</h2>
-      <form>
+      <form action="mailto:sitiahamadi44@gmail.com" method="get" enctype="application/x-www-form-urlencoded" >
         <input type="text" placeholder="Votre nom" required>
         <input type="email" placeholder="Votre e-mail" required>
         <textarea placeholder="Votre message..." rows="5" required></textarea>
         <button type="submit">Envoyer</button>
       </form>
+      <p>📧 <a href="mailto:siti.ahmadi.dev@gmail.com">sitiahmadi44@gmai.com</a></p>
+      <p>📱 07 67 45 89 00</p>
     </section>
   </main>
+  
 
-
-
+<!--
   <footer>
     <p>📧 <a href="mailto:siti.ahmadi.dev@gmail.com">sitiahmadi44@gmai.com</a></p>
     <p>📱 07 67 45 89 00</p>
   </footer>
-
+-->
   <div class="heart-chat">
     <div class="heart"></div>
     <div class="chatbox">👋 Prête à coder pour vous !</div>
   </div>
+
+
+
+
+  <script>
+    // Ajouter une animation sur le menu déroulant
+    document.querySelectorAll('nav ul li').forEach(function(item) {
+      item.addEventListener('mouseover', function() {
+        this.querySelector('ul').style.display = 'block';
+      });
+
+      item.addEventListener('mouseout', function() {
+        this.querySelector('ul').style.display = 'none';
+      });
+    });
+  </script>
 
 </body>
 </html>
