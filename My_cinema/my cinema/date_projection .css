@@ -1,0 +1,71 @@
+/* Style général */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+#recherche-film {
+    background-color: #fafafa; /* Fond clair pour la section */
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 550px; /* Limiter la largeur pour une bonne lisibilité */
+    margin: 20px auto;
+    border: 2px solid #d19fae; /* Bordure rose doux */
+}
+
+#recherche-film h2 {
+    color: #b58a80; /* Rose plus foncé pour le titre */
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 18px;
+    text-align: center;
+    font-size: 24px;
+}
+
+#recherche-film form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#recherche-film label {
+    font-size: 18px;
+    color: #6a1b9a; /* Rose foncé pour les labels */
+    font-weight: bold;
+}
+
+#recherche-film input {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #d19fae;
+    font-size: 16px;
+    width: 100%;
+}
+
+#recherche-film button {
+    background-color: #d19fae; /* Rose doux pour le bouton */
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+}
+
+#recherche-film button:hover {
+    background-color: #b58a80; /* Teinte plus foncée au survol */
+}

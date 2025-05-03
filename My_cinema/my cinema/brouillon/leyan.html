@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cinema</title>
+    <link rel="stylesheet" href="leyan.css">
+</head>
+<body>
+    <header>
+        <h1>My Cinema</h1>
+        <nav>
+            <ul>
+                <li><a href="#search-films">Rechercher des Films</a></li>
+                <li><a href="#search-members">Rechercher un Membre</a></li>
+                <li><a href="#manage-subscriptions">Gestion des Abonnés</a></li>
+                <li><a href="#add-session">Ajouter une Séance</a></li>
+                <li><a href="#search-by-date">Rechercher par Date</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Section: Rechercher des Films -->
+        <section id="search-films">
+            <h2>Rechercher des Films</h2>
+            <form>
+                <label for="film-name">Nom du Film :</label>
+                <input type="text" id="film-name" name="film-name" placeholder="Entrez le nom du film">
+
+                <label for="film-genre">Genre :</label>
+                <select id="film-genre" name="film-genre">
+                    <option value="">-- Choisir un genre --</option>
+                    <option value="action">Action</option>
+                    <option value="comedy">Comédie</option>
+                    <option value="drama">Drame</option>
+                    <option value="horror">Horreur</option>
+                </select>
+
+                <label for="film-distributor">Distributeur :</label>
+                <select id="film-distributor" name="film-distributor">
+                    <option value="">-- Choisir un distributeur --</option>
+                    <option value="distributor1">Distributeur 1</option>
+                    <option value="distributor2">Distributeur 2</option>
+                </select>
+
+                <button type="submit">Rechercher</button>
+            </form>
+        </section>
+
+        <!-- Section: Rechercher un Membre -->
+        <section id="search-members">
+            <h2>Rechercher un Membre</h2>
+            <form>
+                <label for="member-firstname">Prénom :</label>
+                <input type="text" id="member-firstname" name="member-firstname" placeholder="Entrez le prénom">
+
+                <label for="member-lastname">Nom :</label>
+                <input type="text" id="member-lastname" name="member-lastname" placeholder="Entrez le nom">
+
+                <button type="submit">Rechercher</button>
+            </form>
+        </section>
+
+        <!-- Section: Gestion des Abonnés -->
+        <section id="manage-subscriptions">
+            <h2>Gestion des Abonnés</h2>
+            <ul>
+                <li><a href="#">Ajouter un Abonnement</a></li>
+                <li><a href="#">Modifier un Abonnement</a></li>
+                <li><a href="#">Afficher l’Historique d’un Abonné</a></li>
+                <li><a href="#">Ajouter un Film Vu</a></li>
+            </ul>
+        </section>
+
+        <!-- Section: Ajouter une Séance -->
+        <section id="add-session">
+            <h2>Ajouter une Séance</h2>
+            <a href="#">Ajouter une Séance pour un Film</a>
+        </section>
+
+        <!-- Section: Rechercher par Date de Projection -->
+        <section id="search-by-date">
+            <h2>Rechercher par Date</h2>
+            <form>
+                <label for="projection-date">Date de Projection :</label>
+                <input type="date" id="projection-date" name="projection-date">
+
+                <button type="submit">Rechercher</button>
+            </form>
+        </section>
+
+        <!-- Section: Pagination -->
+        <section id="pagination">
+            <h2>Pagination</h2>
+            <div class="pagination">
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">Next</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Cinema. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

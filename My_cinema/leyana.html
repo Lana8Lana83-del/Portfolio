@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cinema</title>
+    <link rel="stylesheet" href="leyana.css">
+</head>
+<body>
+    <header>
+        
+        <div class="container">
+
+            <!--navigation-->
+            <nav class="container-nav">
+                <h1>My Cinema</h1>
+                <ul class="ul-nav">
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Films</a></li>
+                    <li><a href="#">Abonnement</a></li>
+                    <li><a href="#">Membre</a></li>
+                    <li><a href="ajout_seance.html">Ajouter Séance</a></li>
+                    <li><a href="date_projection.html">Date de projection</a></li>
+
+                    <li><a href="#">Historique</a>
+                        <!--<ul>
+                            <li>Afficher l'historique</li>
+                            <li> Ajouter un film vu</li>
+                        </ul>-->
+                    </li>
+                </ul>
+            </nav>
+            
+
+            <div class="auth-links">
+                <a href="ins_connex.html">S'inscrire/Se connecter</a>
+                <!--<a href="ins_connex.html">S'inscrire</a>-->
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        
+
+
+    
+
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <main>
+
+        <div class="div-main">
+            <!--research-->
+            <section id="search">
+                <h2>Rechercher un Film</h2>
+                <form action="./fichierphp/movieread.php">
+                    <input type="text" placeholder="Nom du film" name="movieSearch">
+                    <select>
+                        <option>Genre</option>
+                        <option>Action</option>
+                        <option>Comédie</option>
+                    </select>
+                    <select>
+                        <option>Distributeur</option>
+                        <option>Paramount</option>
+                        <option>Universal</option>
+                    </select>
+                    <button type="submit">Rechercher</button>
+                </form>
+            </section>
+    
+    
+    
+    
+    
+            <section id="subscriptions">
+                <h2>Gestion des Abonnement</h2>
+                <ul>
+                    <li><a href="#">Ajouter un Abonnement</a></li>
+                    <li><a href="#">Modifier un Abonnement</a></li>
+                    <li><a href="#">Supprimer un Abonnement</a></li>
+                    <li><a href="#">Afficher l'Historique</a></li>
+                    <li><a href="#">Ajouter un film vu</a></li>
+                </ul>
+            </section>
+
+
+
+
+            <section id="recherche-membre">
+                <h2>Rechercher un Membre</h2>
+                <form action="#" method="GET">
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" placeholder="Entrez le nom" required>
+        
+                    <label for="prenom">Prénom :</label>
+                    <input type="text" id="prenom" name="prenom" placeholder="Entrez le prénom" required>
+        
+                    <button type="submit">Rechercher</button>
+                </form>
+            </section>
+        </div>
+        
+
+
+        <!--
+        <div class="video">
+            <iframe 
+                width="845" 
+                height="470" 
+                src="https://www.youtube.com/embed/ID_DE_LA_VIDEO" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>-->
+        
+
+
+
+        <!--
+        <div class="video">
+            <video controls width="745" height="470">
+                <source src="video.mp4" type="video/mp4">
+            
+            </video>
+        </div>
+    -->
+    </main>
+    
+
+
+
+
+
+    <!--PAGINATION-->
+    <div class="pagination">
+        <h1>Explorez nos films</h1>
+
+
+
+
+
+
+    </div>
+    
+
+    
+
+
+    <!--
+    <footer>
+        <p>&copy; 2025 My Cinema - Tous droits réservés.</p>
+    </footer>-->
+
+
+
+
+    <!-- Boite de dialogue -->
+    <div class="chat-container">
+        <div class="chatbox">
+            <div class="chatbox-content">
+                <div class="chatbox-header">
+                    <span>Chat</span>
+                    <button class="close-btn">✖</button>
+                </div>
+                <div class="chatbox-body">
+                    <div class="message">Bonjour ! Comment puis-je vous aider ?</div>
+                    <input type="text" placeholder="Écrivez votre message..." class="chat-input">
+                    <button class="send-btn">Envoyer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+</html>

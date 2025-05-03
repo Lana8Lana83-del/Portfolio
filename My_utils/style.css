@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: papayawhip;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    height: 100v;
+}
+
+
+/*1) CONTAINER + TITRE PRINCIPAL*/
+.container {
+    background-color: pink;
+    padding: 30px;
+    border-radius: 4px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 30px;
+    font-size: bold;
+}
+
+
+
+
+/* 2) SECTIONS DES LISTES*/
+.list-container {
+    margin-bottom: 20px;
+}
+h2 {
+    color: #555;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: whitesmoke;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li button {
+    margin: 4px;
+    padding: 40px;
+    margin-left: 10px;
+    background-color: purple;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+li.finish {
+    background-color: hwb(330 83% 0%);
+    text-decoration: line-through;
+}
+
+
+
+
+
+/* 3) FORMULAIRE D'AJOUT DE TACHES */
+input{
+    border-radius: 80px;
+}
+
+.add-task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+.add-task input {
+    padding: 12px;
+    border-radius: 10px;
+    width: 80%;
+    font-size: 20px;
+}
+
+.add-task button {
+    padding: 15px 20px;
+    width: 20%;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    
+}
+
+.add-task input:hover {
+    background-color: palevioletred;
+    
+}

@@ -1,0 +1,132 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+
+}
+/* Styles pour le tableau de score */
+#scoreboard {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 200px;
+    margin-right: 2rem;
+    height: 150px;
+}
+#scoreboard table {
+    width: 100%;
+    border-collapse: collapse;
+}
+#scoreboard th, #scoreboard td {
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+#scoreboard th {
+    background-color: #f4f4f4;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+
+
+#board{
+    height: 540px;
+    width: 634px;
+
+    background-color: blue;
+    border: 10px solid blue;
+
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tile{
+    height: 70px;
+    width: 70px;
+    margin: 5px;
+
+    background-color: white;
+    border-radius: 50%;
+    border: 5px solid navy;
+}
+
+
+.red-piece{
+    background-color: red;
+    animation: piece-anim 1s ease-in-out forwards;
+}
+
+.yellow-piece{
+    background-color: yellow;
+    animation: piece-anim 1s ease-out forwards;
+}
+
+
+
+
+
+@keyframes piece-anim {
+    0% {
+        transform: translateY(-700px); 
+    }
+
+    30% {
+        transform: translateY(-30px); 
+    }
+
+    50% {
+        transform: translateY(-15px); 
+    }
+
+    60% {
+        transform: translateY(-30px); 
+    }
+
+    70% {
+        transform: translateY(0); 
+    }
+
+    80% {
+        transform: translateY(-5px); 
+    }
+
+
+    80% {
+        transform: translateY(-5px); 
+    }
+    
+
+    83% {
+        transform: translateY(-4px); 
+    }
+    
+    85% {
+        transform: translateY(-3px); 
+    }
+
+    85% {
+        transform: translateY(-2px); 
+    }
+
+    85% {
+        transform: translateY(-1px); 
+    }
+    
+
+    100% {
+        transform: translateY(0); 
+    }
+}
+
+
+
+
+
+
+/*MEDIA QUERY TEL TABLETTE + ORDINATEUR*/

@@ -1,0 +1,141 @@
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: olivegreen;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #004d00; /* Vert plus foncé pour le contraste */
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 1.5rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: darkgreen;
+}
+
+main {
+    padding: 2rem;
+    width: 80%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+section {
+    background-color: white;
+    color: #333;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+    margin-top: 0;
+    color: olivegreen;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form label {
+    font-weight: bold;
+    color: #004d00;
+}
+
+form input, form select, form button {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #004d00;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: darkgreen;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.pagination a {
+    text-decoration: none;
+    color: #004d00;
+    padding: 0.5rem 1rem;
+    border: 1px solid #004d00;
+    border-radius: 5px;
+    background-color: white;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination a:hover {
+    background-color: #004d00;
+    color: white;
+}
+
+footer {
+    background-color: #004d00;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}

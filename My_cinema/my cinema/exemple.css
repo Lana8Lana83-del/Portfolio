@@ -1,0 +1,529 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffccdd; /* Fond rose bonbon */
+  }
+
+/*HEADER*/
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    /*text-align: center;*/
+  }
+  .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  header h1 {
+    margin: 0;
+  }
+
+/*navigation*/ 
+.container-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.ul-nav {
+  margin-top: auto;
+}
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-left: 0;
+    padding-left: 0;
+    float: left;
+    
+  }
+
+  nav ul li {
+    display: inline;
+    
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    
+  }
+  nav ul li a:hover{
+    color: #d19fae;
+  }
+
+
+/*se connecter/s'inscrire*/
+  .auth-links a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 20px; /* Pour espacer les liens */
+    font-weight: bold;
+}
+
+.auth-links {
+    display: flex;
+    justify-content: flex-end;
+    width: 40%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*video*/
+.video{
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  section {
+    background-color: #fff;
+    /*padding: 15px;*/
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   /* width: 45%;*/
+   /* padding: 2px;*/
+   /* margin: 0px;*/
+  }
+
+
+
+
+  #search{
+    padding: 0px;
+    margin: 0px;
+  }
+
+  section h2 {
+    margin-top: 0;
+  }
+
+
+  #search {
+    background-color: #f0f0f0; /* Gris clair pour l'arrière-plan */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px; /* Limiter la largeur pour une meilleure lisibilité */
+    margin: 20px auto;
+}
+
+#search h2 {
+    color: #d19fae; /* Rose doux pour le titre */
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#search form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#search input, #search select, #search button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #d19fae; /* Bordure rose doux */
+    font-size: 16px;
+}
+
+#search input {
+    width: 100%;
+}
+
+#search select {
+    width: 100%;
+}
+
+#search button {
+    background-color: #d19fae; /* Rose doux pour le bouton */
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#search button:hover {
+    background-color: #b58a80; /* Teinte un peu plus foncée au survol */
+}
+
+
+
+/*RECHERCHER UN MEMBRE*/
+#recherche-membre {
+  background-color: #f0f0f0; /* Fond plus clair pour la section */
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px; /* Limiter la largeur */
+  margin: 20px auto;
+  border: 2px solid #d19fae; /* Bordure rose doux */
+  
+}
+
+#recherche-membre h2 {
+  color: #d19fae; /* Rose plus foncé pour le titre */
+  font-family: 'Arial', sans-serif;
+  margin-bottom: 18px;
+  text-align: center;
+  font-size: 24px;
+}
+
+#recherche-membre form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#recherche-membre label {
+  font-size: 18px;
+  color:#333333; /* Rose foncé pour les labels */
+  font-weight: bold;
+}
+
+#recherche-membre input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #d19fae;
+  font-size: 16px;
+  width: 100%;
+}
+
+#recherche-membre button {
+  background-color: #d19fae; /* Rose doux pour le bouton */
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  transition: background-color 0.3s ease;
+  font-size: 18px;
+}
+
+#recherche-membre button:hover {
+  background-color: #b58a80; /* Teinte plus foncée au survol */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*MAIN*/
+  main {
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    /*align-items: flex-end;*/
+    min-height: 50vh; /* 50% de la hauteur */
+    border-bottom: 2px solid grey;
+  }
+  
+
+
+  /*gestions des abonne*/
+ /* #subscriptions {
+    height: 120px;
+    border: 2px solid white;
+    margin: 30px;
+    padding: 40px;
+  }*/
+  #subscriptions {
+    background-color: #f0f0f0; /* Gris clair pour le fond */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px; /* Limiter la largeur */
+    margin: 20px auto;
+}
+
+#subscriptions h2 {
+    color: #d19fae; /* Rose doux pour le titre */
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#subscriptions ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#subscriptions ul li {
+    display: flex;
+    justify-content: center;
+}
+
+#subscriptions ul li a {
+    text-decoration: none;
+    color: #d19fae; /* Rose doux pour les liens */
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #d19fae; /* Bordure rose doux */
+    transition: background-color 0.3s ease;
+}
+
+#subscriptions ul li a:hover {
+    background-color: #d19fae; /* Rose doux au survol */
+    color: white;
+}
+
+
+
+.div-main {
+  display: flex;
+  flex-direction: row; /* Aligne les blocs en ligne verticale */
+  gap: 20px; /* Espace entre les blocs */
+}
+
+
+#search , #subscriptions {
+  width: 60%;
+}
+
+
+
+
+  
+
+
+
+
+/*PAGINATION*/
+.pagination,h1{
+  display: flex;
+  margin: 0 auto;
+}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /*FOOTER*/
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*boite de dialogue */
+.chat-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+}
+
+.chatbox {
+  position: relative;
+  width: 160px;
+  /*background-color: #FF69B4;*/
+  background-color: #FF69B4;;
+  border-radius: 15px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chatbox-content {
+  width: 100%;
+}
+
+.chatbox-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.chatbox-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.message {
+  margin-bottom: 5px;
+  color: white;
+  text-align: center;
+}
+
+.chat-input {
+  width: 100%;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+.send-btn {
+  margin-top: 5px;
+  padding: 5px;
+  border: none;
+  background-color: white;
+  color: #FF69B4;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+/*AJOUTER SEANCE /* Section d'ajout de séance */
+#add-session {
+  background-color: #ffffff;
+  padding: 30px;
+  margin: 20px auto;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#add-session h2 {
+  color: #d19fae;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#add-session form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#add-session input, #add-session button {
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #d19fae;
+  font-size: 16px;
+}
+
+#add-session button {
+  background-color: #d19fae;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+#add-session button:hover {
+  background-color: #b58a80;
+}

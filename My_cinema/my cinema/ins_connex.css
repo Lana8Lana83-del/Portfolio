@@ -1,0 +1,93 @@
+/* Style général */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8; /* Couleur de fond douce */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333; /* Texte en gris foncé pour un bon contraste */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1000px;
+    gap: 30px;
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 45%;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #8a2be2; /* Violet pour le titre */
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #6a1b9a; /* Couleur rose pour les labels */
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border 0.3s;
+}
+
+input:focus {
+    border-color: #8a2be2; /* Violet au focus */
+    outline: none;
+}
+
+button {
+    padding: 12px;
+    background-color: #8a2be2; /* Violet pour le bouton */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #6a1b9a; /* Rose foncé au survol */
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-container {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,376 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffccdd; /* Fond rose bonbon */
+  }
+
+/*HEADER*/
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    /*text-align: center;*/
+  }
+  .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  header h1 {
+    margin: 0;
+  }
+
+/*navigation*/ 
+.container-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.ul-nav {
+  margin-top: auto;
+}
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-left: 0;
+    padding-left: 0;
+    float: left;
+    
+  }
+
+  nav ul li {
+    display: inline;
+    
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    
+  }
+  nav ul li a:hover{
+    color: #d19fae;
+  }
+
+
+/*se connecter/s'inscrire*/
+  .auth-links a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 20px; /* Pour espacer les liens */
+    font-weight: bold;
+}
+
+.auth-links {
+    display: flex;
+    justify-content: flex-end;
+    width: 40%;
+}
+
+
+
+/*video*/
+.video{
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 0px;
+}
+
+
+
+
+
+
+
+/*MAIN*/
+/* Formulaires des sections (réduire la largeur) */
+section form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 80%; /* Réduit la largeur du formulaire à 80% de la section */
+    max-width: 300px; /* Largeur maximale pour éviter qu'il soit trop large */
+    margin: 0 auto; /* Centre le formulaire dans la section */
+}
+
+/* Entrées et boutons */
+section input, section select, section button {
+    padding: 8px; /* Réduit le padding pour un style plus fin */
+    font-size: 14px; /* Réduit la taille de la police pour s'adapter à la nouvelle largeur */
+    border-radius: 5px;
+    border: 1px solid #d19fae;
+}
+
+/* Boutons */
+section button {
+    font-weight: bold;
+    background-color: #d19fae;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+section button:hover {
+    background-color: #b58a80;
+}
+
+/* Titres des sections */
+section h2 {
+    font-size: 18px; /* Réduit la taille du titre pour correspondre au style plus fin */
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*PAGINATION*/
+.pagination,h1{
+  display: flex;
+  margin: 0 auto;
+}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /*FOOTER*/
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*boite de dialogue */
+.chat-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+}
+
+.chatbox {
+  position: relative;
+  width: 160px;
+  /*background-color: #FF69B4;*/
+  background-color: #FF69B4;;
+  border-radius: 15px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chatbox-content {
+  width: 100%;
+}
+
+.chatbox-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.chatbox-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.message {
+  margin-bottom: 5px;
+  color: white;
+  text-align: center;
+}
+
+.chat-input {
+  width: 100%;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+.send-btn {
+  margin-top: 5px;
+  padding: 5px;
+  border: none;
+  background-color: white;
+  color: #FF69B4;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+/*AJOUTER SEANCE /* Section d'ajout de séance */
+#add-session {
+  background-color: #ffffff;
+  padding: 30px;
+  margin: 20px auto;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#add-session h2 {
+  color: #d19fae;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#add-session form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#add-session input, #add-session button {
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #d19fae;
+  font-size: 16px;
+}
+
+#add-session button {
+  background-color: #d19fae;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+#add-session button:hover {
+  background-color: #b58a80;
+}

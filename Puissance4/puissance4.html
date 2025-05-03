@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puissance 4</title>
+    <link rel="stylesheet" href="puissance4.css">
+</head>
+<body>
+    <h1>PUISSANCE 4</h1>
+    <div class="container">
+
+        <!-- Tableau de score -->
+        <div id="scoreboard">
+            <h3>Tableau des Scores</h3>
+            <table>
+                <tr>
+                    <th>Joueur</th>
+                    <th>Score</th>
+                </tr>
+                <tr>
+                    <td>Joueur Rouge</td>
+                    <td id="scoreRed">0</td>
+                </tr>
+                <tr>
+                    <td>Joueur Jaune</td>
+                    <td id="scoreYellow">0</td>
+                </tr>
+            </table>
+
+
+            <h3>Historique des parties</h3>
+            <ul id="gameHistory"></ul> <!-- Affichage de l'historique des parties -->
+        </div>
+
+        <div>
+            <h2 id="winner"></h2>
+            <p id="currentPlayer">Tour de : Joueur Rouge</p> <!-- Affichage du joueur actuel -->
+            <div id="board"></div>
+            <button id="reset">Reprendre la partie</button>
+            <button id="undo">Annuler le dernier coup</button>
+            <button id="newGame">Nouvelle Partie</button> <!-- bouton réinitialiser le jeu -->
+        </div>
+    </div>
+
+    <script src="puissance4.js"></script> 
+        
+</body>
+</html>

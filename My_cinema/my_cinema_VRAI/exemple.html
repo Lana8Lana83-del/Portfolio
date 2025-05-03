@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cinema - Gestion</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="exemple.css">
+</head>
+<body class="container mt-4">
+
+    <h1 class="mb-4 text-center">Gestion du Cinéma</h1>
+
+    <!-- Recherche de films -->
+    <h2>Recherche de Films</h2>
+    <form method="GET" action="search_movies.php" class="mb-4">
+        <label for="title" class="form-label">Titre du film :</label>
+        <input type="text" id="title" name="title" class="form-control">
+
+        <label for="genre" class="form-label">Genre :</label>
+        <select id="genre" name="genre" class="form-select">
+            <option value="">Tous</option>
+            <option value="action">Action</option>
+            <option value="comedy">Comédie</option>
+            <option value="drama">Drame</option>
+        </select>
+
+        <label for="distributor" class="form-label">Distributeur :</label>
+        <input type="text" id="distributor" name="distributor" class="form-control">
+
+        <button type="submit" class="btn btn-primary mt-2">Rechercher</button>
+    </form>
+
+    <!-- Recherche de membre -->
+    <h2>Recherche de Membre</h2>
+    <form method="GET" action="search_member.php" class="mb-4">
+        <label for="lastname" class="form-label">Nom :</label>
+        <input type="text" id="lastname" name="lastname" class="form-control">
+
+        <label for="firstname" class="form-label">Prénom :</label>
+        <input type="text" id="firstname" name="firstname" class="form-control">
+
+        <button type="submit" class="btn btn-primary mt-2">Rechercher</button>
+    </form>
+
+    <!-- Gestion des abonnements -->
+    <h2>Gestion des Abonnements</h2>
+    <form method="POST" action="manage_subscription.php" class="mb-4">
+        <label for="member_id" class="form-label">ID Membre :</label>
+        <input type="number" id="member_id" name="member_id" class="form-control" required>
+
+        <label for="subscription" class="form-label">Abonnement :</label>
+        <select id="subscription" name="subscription" class="form-select">
+            <option value="basic">Basique</option>
+            <option value="premium">Premium</option>
+        </select>
+
+        <button type="submit" name="action" value="add" class="btn btn-success mt-2">Ajouter</button>
+        <button type="submit" name="action" value="update" class="btn btn-warning mt-2">Modifier</button>
+        <button type="submit" name="action" value="delete" class="btn btn-danger mt-2">Supprimer</button>
+    </form>
+
+    <!-- Historique d'un abonné -->
+    <h2>Historique d'un Abonné</h2>
+    <form method="GET" action="member_history.php" class="mb-4">
+        <label for="member_id_history" class="form-label">ID Membre :</label>
+        <input type="number" id="member_id_history" name="member_id" class="form-control" required>
+
+        <button type="submit" class="btn btn-primary mt-2">Voir l'historique</button>
+    </form>
+
+    <!-- Ajouter un film à l'historique -->
+    <h2>Ajouter un Film à l'Historique</h2>
+    <form method="POST" action="add_history.php" class="mb-4">
+        <label for="member_id_add" class="form-label">ID Membre :</label>
+        <input type="number" id="member_id_add" name="member_id" class="form-control" required>
+
+        <label for="movie_id" class="form-label">ID du Film :</label>
+        <input type="number" id="movie_id" name="movie_id" class="form-control" required>
+
+        <button type="submit" class="btn btn-success mt-2">Ajouter au journal</button>
+    </form>
+
+    <!-- Ajouter une séance pour un film -->
+    <h2>Ajouter une Séance</h2>
+    <form method="POST" action="add_session.php" class="mb-4">
+        <label for="movie_id_session" class="form-label">ID du Film :</label>
+        <input type="number" id="movie_id_session" name="movie_id" class="form-control" required>
+
+        <label for="date" class="form-label">Date :</label>
+        <input type="date" id="date" name="date" class="form-control" required>
+
+        <button type="submit" class="btn btn-primary mt-2">Ajouter la Séance</button>
+    </form>
+
+</body>
+</html>
